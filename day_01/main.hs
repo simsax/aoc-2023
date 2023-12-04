@@ -1,5 +1,4 @@
 import Data.Char
-import Data.Maybe
 
 numbers = []
 
