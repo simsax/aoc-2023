@@ -146,8 +146,6 @@ isInside tiles loopTiles colLength tile = odd (countIntersection tiles loopTiles
 
 countInsideLoop :: [[Tile]] -> Int
 countInsideLoop tiles = length (filter (isInside tiles loopTiles colLength) freeTiles)
--- countInsideLoop :: [[Tile]] -> [Coord]
--- countInsideLoop tiles = filter (isInside tiles loopTiles colLength) freeTiles
     where
         colLength = length (head tiles)
         loopTiles = findLoopTiles tiles
